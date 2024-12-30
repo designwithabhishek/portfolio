@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 import { Content, PageLoaderWrapper, Title } from "./page-loader.styles";
 
@@ -8,19 +8,6 @@ const PageLoader = (props) => {
   const [loadComplete, setLoadComplete] = useState(false);
   const [showContent, setShowContent] = useState(false);
   const wrapperRef = useRef();
-
-  //   useEffect(() => {
-  //     if (wrapperRef.current) {
-  //       const wrapper = wrapperRef.current;
-  //       wrapper.addEventListener("animationend", () => {
-  //         setOpacity(1);
-  //         setTimeout(() => {
-  //           setOpacity(0);
-  //           setLoadComplete(true);
-  //         }, 2000);
-  //       });
-  //     }
-  //   }, []);
 
   const handleAnimationEnd = () => {
     setOpacity(1);

@@ -90,21 +90,6 @@ export const LinkedInIcon = styled(LinkedIn)`
   ${IconStyles}
 `;
 
-// export const ContactTable = styled.table``;
-
-// export const ContactRow = styled.tr`
-// `;
-// export const ContactHeading = styled.th`
-//   font-weight: 500;
-//   font-size: 2rem;
-//   padding: 1rem 0;
-//   text-align: left;
-//   text-transform: capitalize;
-// `;
-// export const ContactData = styled.td`
-//   padding: 1rem;
-// `;
-
 export const Image = styled.img`
   height: 60rem;
   width: 100%;

@@ -10,7 +10,6 @@ import {
   Title,
   TextItemInner,
   ResumeLinkButton,
-  ResumeWrapper,
 } from "./home.styles";
 
 const Home = () => {

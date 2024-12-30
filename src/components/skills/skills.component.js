@@ -4,7 +4,6 @@ import {
   ReactIcon,
   JSIcon,
   CSSIcon,
-  CSSInJSIcon,
   NodeJSIcon,
   HTMLIcon,
   TSIcon,
