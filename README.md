@@ -76,8 +76,8 @@ Deployed on **[Live Link](https://your-portfolio-link.com)**.
 
 ## 📧 Contact
 
-- **Email:** [your-email@example.com](mailto\:your-email@example.com)
-- **LinkedIn:** [Profile Link](https://linkedin.com/in/username)
+- **Email:** [designwithabhishek1996@gmail.com](mailto\:designwithabhishek1996@gmail.com)
+- **LinkedIn:** [Profile Link](https://www.linkedin.com/in/abhishekgupta196/)
 
 ---
 
