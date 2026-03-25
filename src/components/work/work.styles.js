@@ -46,13 +46,16 @@ export const ImageOverlay = styled.div`
   opacity: 0.9;
   transition: transform 400ms ease-in-out;
   transform: translateX(150%);
-  pointer-events: none;
   border-radius: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 3rem;
+
+  &:hover {
+    transform: translateX(0%);
+  }
 
   @media (max-width: 828px) {
     transform: translateX(0%);
@@ -76,7 +79,6 @@ export const Title = styled.h2`
   font-size: clamp(6rem, 7vw, 8rem);
   font-weight: 400;
   text-align: center;
-  margin-bottom: 4rem;
   background: linear-gradient(to right, #4568dc, #b06ab3);
   -webkit-background-clip: text;
   background-clip: text;

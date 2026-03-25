@@ -10,7 +10,7 @@ import {
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const handleClick = (isOpen) => (e) => {
+  const handleClick = (isOpen) => () => {
     setIsOpen(isOpen);
   };
 

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useRef } from "react";
 import { Content, PageLoaderWrapper, Title } from "./page-loader.styles";
 
 const PageLoader = (props) => {
@@ -7,7 +6,6 @@ const PageLoader = (props) => {
   const [opacity, setOpacity] = useState(0);
   const [loadComplete, setLoadComplete] = useState(false);
   const [showContent, setShowContent] = useState(false);
-  const wrapperRef = useRef();
 
   const handleAnimationEnd = () => {
     setOpacity(1);
@@ -20,7 +18,6 @@ const PageLoader = (props) => {
   return (
     <>
       <PageLoaderWrapper
-        ref={wrapperRef}
         loadComplete={loadComplete}
         onAnimationEnd={handleAnimationEnd}
       >

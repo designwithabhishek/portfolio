@@ -12,12 +12,14 @@ function App() {
   const cursorRef = useRef();
 
   useEffect(() => {
-    if (cursorRef.current) {
-      document.addEventListener("mousemove", (e) => {
+    const handler = (e) => {
+      if (cursorRef.current) {
         cursorRef.current.style.left = e.pageX + "px";
         cursorRef.current.style.top = e.pageY + "px";
-      });
-    }
+      }
+    };
+    document.addEventListener("mousemove", handler);
+    return () => document.removeEventListener("mousemove", handler);
   }, []);
 
   return (
