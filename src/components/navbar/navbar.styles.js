@@ -59,7 +59,6 @@ export const BaseIcon = css`
   position: absolute;
   top: 2rem;
   right: 3rem;
-  color: color;
   width: 4rem;
   height: 4rem;
   display: none;

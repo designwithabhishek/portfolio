@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 let listenersCallback = new Map();
 let observer;
@@ -19,23 +19,24 @@ const handleIntersection = (entries) => {
 const getObserver = () => {
   if (!observer) {
     observer = new IntersectionObserver(handleIntersection, {
-      root: 0,
+      root: null,
       threshold: 0.15,
     });
-    return observer;
   }
+  return observer;
 };
 
 const useIntersection = (elem, cb) => {
   useEffect(() => {
     const target = elem.current;
-    const observer = getObserver();
+    const obs = getObserver();
     listenersCallback.set(target, cb);
-    observer.observe(target);
+    obs.observe(target);
     return () => {
       listenersCallback.delete(target);
-      observer.unobserve(target);
+      obs.unobserve(target);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 };
 

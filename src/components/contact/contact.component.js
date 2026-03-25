@@ -44,6 +44,7 @@ const Contact = () => {
               <LinkedInIcon />
               <ContactLink
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/abhishekgupta196/"
               >
                 LinkedIn

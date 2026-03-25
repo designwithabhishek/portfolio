@@ -90,7 +90,6 @@ export const TextItemInner = styled.div`
 
 export const ResumeLinkButton = styled.a`
   display: inline-block;
-  border-color: 1px solid #1f1f1f;
   text-decoration: none;
   padding: 1.2rem 2.5rem;
   text-align: center;
